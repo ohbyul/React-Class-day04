@@ -46,24 +46,31 @@ const [상태데이터, 상태를 위한 setter 함수] = useState(초기값);
 
 ### Test3
 useState
+```
 클릭시 배경색 바꾸기
-
+```
 ### Test4
 useState
+```
 버튼 클릭시, 보이고 숨기기
-
+````
 ### Test5
 useState
+````
 table 출력
-
+```
 ### Test6
 useState
+```
 증가 감소
-
+```
 ### Test7
 useState
+```
 className 뗏다 붙였다
-
+```
 ### Test8 
+```
 e.target
 e.currentTarget
+```
