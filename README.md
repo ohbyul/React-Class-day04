@@ -1,7 +1,7 @@
 # React class 
 21.11.19 금 day04
 
-### Test1 
+### Test1.js
 map 정리
 ```
 map 의 key는 고유값 (고유번호 : 주민번호처럼 생각)
@@ -9,7 +9,7 @@ index는 주로 사용하지 않는다.(단순히 화면에 값을 출력할 경
 수정,삭제, 추가등의 데이터변경이 이루어지면 문제가 생긴다,
 주로 배열객체의 키값으로 선언한다
 ```
-### Test2
+### Test2.js
 useState
 ```
 1. 사용자 화면에 View(내용)을 보여주는 것을 렌더링 이라고 한다.
@@ -44,37 +44,37 @@ const [상태데이터, 상태를 위한 setter 함수] = useState(초기값);
 값이 유동으로 변경할 경우
 ```
 
-### Test3
+### Test3.js
 useState
 ```
 클릭시 배경색 바꾸기
 ```
 
-### Test4
+### Test4.js
 useState
 ```
 버튼 클릭시, 보이고 숨기기
 ````
 
-### Test5
+### Test5.js
 useState
 ```
 table 출력
 ```
 
-### Test6
+### Test6.js
 useState
 ```
 증가 감소
 ```
 
-### Test7
+### Test7.js
 useState
 ```
 className 뗏다 붙였다
 ```
 
-### Test8 
+### Test8.js
 ```
 e.target
 e.currentTarget
