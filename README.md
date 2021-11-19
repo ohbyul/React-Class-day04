@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# React class 
+21.11.19 금 day04
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Test1 
+map 정리
+```
+map 의 key는 고유값 (고유번호 : 주민번호처럼 생각)
+index는 주로 사용하지 않는다.(단순히 화면에 값을 출력할 경우)
+수정,삭제, 추가등의 데이터변경이 이루어지면 문제가 생긴다,
+주로 배열객체의 키값으로 선언한다
+```
+### Test2
+useState
+```
+1. 사용자 화면에 View(내용)을 보여주는 것을 렌더링 이라고 한다.
+2. React 엘리면트를 루트 DOM 노드에 렌더링 하려면 둘다 ReactDOM.render()로 전달하면 된다
+3. 초기 렌더링이란 어떠한 UI 관련 프레임워크, 라이브러리를 사용하든지간에 
+    맨 처음 사용자 화면에 뷰를 보여주는 것을 초기 렌더링이라고 한다.
+    리액트에서는 렌더링을 다루는 render 함수가 있다.
 
-## Available Scripts
+바닐라JS와 리액트 차이
+1. 바닐라 js => 변경으로 인한 엘리먼트를 다시 그린다.
+2. React => 변경된 부분만 다시 그린다.
 
-In the project directory, you can run:
+---------------------------------
+함수형 컴포넌트는 렌더링 될때마다 내부의 것들을 다시 계산해야 한다.
+생성 뿐만 아니라 업데이트 될때마다 다시 만들어지기 때문이다.
+그래서 use* 필요한데 이것을 hooks 이라고 한다
+함수형이라서 함수 실행될때 마다 내부의 것은 메모리가 안되서 다시 만들어 쓸수 있다.
+그래서 훅이 등장해서 클래스 처럼 사용이 가능하다.
 
-### `npm start`
++ useState
+import React, { useState } from 'react';
+React.useState
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+const [count, setCount] = useState(0);
+const [상태변수, 상태변수변경을도와주는함수] = useState(초기값);
+    초기값 : 0,{},[],문자,논리값
+    상태변수 = 초기값
+    상태변수 =상태변수변경을도와주는함수(값 , 수식)
+const [상태변수, set+첫글자대문자] = useState(초기값);
+const [상태데이터, 상태를 위한 setter 함수] = useState(초기값);
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+값이 유동으로 변경할 경우
+```
 
-### `npm test`
+### Test3
+useState
+클릭시 배경색 바꾸기
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Test4
+useState
+버튼 클릭시, 보이고 숨기기
 
-### `npm run build`
+### Test5
+useState
+table 출력
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Test6
+useState
+증가 감소
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Test7
+useState
+className 뗏다 붙였다
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Test8 
+e.target
+e.currentTarget
